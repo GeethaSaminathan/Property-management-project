@@ -1,0 +1,911 @@
+USING HTML 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="nav-item">
+        <a href="#">Tenant Login  <i class="fas fa-user"></i> </a></div>
+      <div class="nav-item">
+        <a href="#">Owner Login  <i class="fas fa-key"></i></a>
+      </div>    
+    <div class="nav-item">
+        <a href="#">Realtors  <i class="fas fa-tools"></i> </a>
+      </div>
+    </div>
+</div>
+
+    <!-- Search Section -->
+  
+  <div class="search-container">
+  <input type="text" id="search-bar" placeholder="Search..." oninput="showSuggestions(this.value)">
+  <button type="submit" class="search-button">Search</button>
+  <div id="suggestions-box" class="suggestions"></div>
+</div>
+
+
+    <!-- Social Media Icons -->
+    <div class="nav-right">
+      <ul class="social-media-icons">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+  
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>Your Logo</h1>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Services & Pricing <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Property Management</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Guarantees</a></li>
+              <li><a href="#">Rent vs. Sell Calculator</a></li>
+              <li><a href="#">Service Area</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Available Rentals</a></li>
+          <li class="dropdown">
+            <a href="#">Tenants <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Scheduling a Showing</a></li>
+              <li><a href="#">Request Maintenance</a></li>
+              <li><a href="#">Pay Rent</a></li>
+              <li><a href="#">Tenant Resources</a></li>
+              <li><a href="#">Pet Policy</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Real Estate Sales</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="hero">
+    <h2>Property Management Services</h2>
+  </section>
+
+  
+  
+  <!-- Hero Section -->
+  
+  <!-- Services Section -->
+<section class="services">
+  <div class="container">
+    <div class="service-item">
+      <i class="fas fa-building"></i>
+      <h3>Property Management</h3>
+      <p>We offer full-service property management to reduce the stress of managing your property.</p>
+    </div>
+    <div class="service-item">
+      <i class="fas fa-search"></i>
+      <h3>Search Our Rentals</h3>
+      <p>Browse available rentals and find your next home with ease.</p>
+    </div>
+    <div class="service-item">
+      <i class="fas fa-user-tie"></i>
+      <h3>Owner Resources</h3>
+      <p>Resources for property owners to help you manage and grow your investment.</p>
+    </div>
+    <div class="service-item">
+      <i class="fas fa-users"></i>
+      <h3>Tenant Resources</h3>
+      <p>Information and resources to help tenants throughout their rental experience.</p>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message here" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+  
+  <!-- Testimonials Section -->
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonials-container">
+    <!-- Testimonial 1 -->
+    <div class="testimonial">
+      <img src="client1.jpg" alt="Client 1" class="client-photo" />
+      <p class="client-quote">"Ashwani Property Management helped me find the perfect tenant for my property quickly and hassle-free!"</p>
+      <p class="client-name">- John Doe, Landlord</p>
+    </div>
+    
+    <!-- Testimonial 2 -->
+    <div class="testimonial">
+      <img src="client2.jpg" alt="Client 2" class="client-photo" />
+      <p class="client-quote">"Their property management services have made my life so much easier. Highly recommend!"</p>
+      <p class="client-name">- Sarah Williams, Tenant</p>
+    </div>
+    
+    <!-- Testimonial 3 -->
+    <div class="testimonial">
+      <img src="client3.jpg" alt="Client 3" class="client-photo" />
+      <p class="client-quote">"As a realtor, partnering with Ashwani Property Management has been a fantastic decision."</p>
+      <p class="client-name">- Mike Johnson, Realtor</p>
+    </div>
+  </div>
+</section>
+  <!-- FAQ Section -->
+<section class="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What services do you offer for landlords?</h3>
+      <p>We provide full property management services including tenant screening, rent collection, and maintenance coordination.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I apply for a rental property?</h3>
+      <p>You can search for available rental properties on our website and apply directly online.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you provide maintenance support for tenants?</h3>
+      <p>Yes, tenants can submit maintenance requests directly through our platform, and our team will handle them promptly.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer Section -->
+  <!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <!-- Company Info -->
+    <div class="footer-logo">
+      <img src="logo.svg" alt="Ashwani Property Management Logo" />
+      <p>Ashwani Property Management is dedicated to serving landlords, tenants, and property managers with quality service and solutions.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/rentals">Search Rentals</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="#contact-section">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Legal Info -->
+  <div class="footer-legal">
+    <p>&copy; 2024 Ashwani Property Management. All rights reserved.</p>
+    <ul>
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
+      <li><a href="/terms-of-service">Terms of Service</a></li>
+    </ul>
+  </div>
+</footer>
+
+  
+
+
+  <script src="script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    dropdown.addEventListener('click', function(event) {
+      event.preventDefault();
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // To close the dropdown when clicking outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        if (dropdownContent.style.display === 'block') {
+          dropdownContent.style.display = 'none';
+        }
+      }
+    };
+  });
+</script>
+
+  
+<script>
+  document.getElementById('propertyInquiryForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
+
+    if (name === '' || email === '' || message === '') {
+      alert('Please fill in all required fields.');
+    } else {
+      alert('Thank you for your inquiry! We will contact you soon.');
+      // Here you can add AJAX or any backend call to handle form submission.
+    }
+  });
+</script>
+
+  
+<script>
+  document.getElementById('tenantApplicationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let fullName = document.getElementById('fullName').value;
+    let dob = document.getElementById('dob').value;
+    let email = document.getElementById('email').value;
+    let phone = document.getElementById('phone').value;
+    let currentAddress = document.getElementById('currentAddress').value;
+    let employer = document.getElementById('employer').value;
+    let position = document.getElementById('position').value;
+    let monthlyIncome = document.getElementById('monthlyIncome').value;
+
+    if (fullName === '' || dob === '' || email === '' || phone === '' || currentAddress === '' || employer === '' || position === '' || monthlyIncome === '') {
+      alert('Please fill in all required fields.');
+    } else {
+      alert('Thank you for your application! We will review your details and contact you soon.');
+      // Add backend submission here, such as AJAX or form submission to a server.
+    }
+  });
+</script>
+</body>
+</html>
+
+USING CSS
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1;
+}
+/* Header Section */
+header {
+  background-color: grey;
+  padding: 1rem 0;
+ 
+}
+/* another Header Section for menus and dropdown */
+
+.logo {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #d18f00;
+  border-radius: 5px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f0a500;
+  top: 40px;
+  left: 0;
+  min-width: 200px;
+  z-index: 9999;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.hero {
+  background-color: #ccc;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Icons */
+.fa-chevron-down {
+  margin-left: 5px;
+}
+
+.dropdown-menu li a i {
+  margin-right: 10px;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Hero Section */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  #f0a500;
+  padding: 15px 20px;
+}
+
+/* Left Section */
+.nav-left {
+  display: flex;
+}
+
+.nav-item {
+  position: relative;
+  margin-right: 20px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.nav-item a:hover  {
+  color: #007bff;
+}
+
+
+/* Center Section (Search) */
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.suggestions {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+  width: 100%;
+}
+
+.suggestions div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions div:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+/* Right Section (Social Media Icons) */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-media-icons li {
+  list-style: none;
+}
+
+.social-media-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.social-media-icons li a:hover {
+  color: #007bff;
+}
+
+
+/* Services Section */
+.services {
+  background-color: #f9f9f9;
+  padding: 3rem 0;
+}
+
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+.service-item i {
+  font-size: 3rem;
+  color: #f5a623;
+  margin-bottom: 1rem;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Grid for smaller screens */
+@media (max-width: 992px) {
+  .services .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services .container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Contact Section */
+.contact {
+  background-color: #f5f5f5;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+  background-color: #f5a623;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #e6951b;
+}
+
+
+
+
+/* FAQ Section */
+.faq {
+  background-color: #f5f5f5;
+  padding: 4rem 0;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.faq-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  font-size: 1.3rem;
+  color: #f5a623;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #666;
+  display: none;
+}
+
+/* Show the answer when clicked */
+.faq-item.active p {
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .faq h2, .testimonials h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f5a623;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design for Contact & Footer */
+@media (max-width: 768px) {
+  .contact form {
+    padding: 0 20px;
+  }
+}
+
+
+
+/* Ensure the Navbar Stays Above Other Content */
+header {
+  position: relative;
+  z-index: 999;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-logo p {
+  max-width: 300px;
+}
+
+.footer-links, .footer-social {
+  margin: 0 20px;
+}
+
+.footer-links ul, .footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li, .footer-social li {
+  margin: 10px 0;
+}
+
+.footer-links a, .footer-social a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.footer-social a i {
+  margin-right: 8px;
+}
+
+.footer-legal {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-legal ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.footer-legal li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-legal a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+/* Testimonials Section */
+.testimonials {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  padding: 20px;
+  margin: 15px;
+}
+
+.client-photo {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.client-quote {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.client-name {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+USING JAVA SCRIPT
+// Placeholder script for any future interactive features like dropdowns, search, etc.
+console.log('JavaScript is working!');
+// Contact form validation
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  let message = document.getElementById('message').value;
+
+  if (name === '' || email === '' || message === '') {
+    alert('Please fill out all fields.');
+  } else {
+    alert('Message sent successfully!');
+    // You can add AJAX or other back-end handling code here
+  }
+});
+// FAQ Toggle functionality
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+document.querySelectorAll('.nav-item').forEach(item => {
+  item.addEventListener('click', function() {
+    // Close any open dropdown
+    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+      if (menu !== this.querySelector('.dropdown-menu')) {
+        menu.classList.remove('show');
+      }
+    });
+
+    // Toggle the current dropdown
+    this.querySelector('.dropdown-menu').classList.toggle('show');
+  });
+});
+
+// Close the dropdown if clicked outside
+window.addEventListener('click', function(event) {
+  if (!event.target.closest('.nav-item')) {
+    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+      menu.classList.remove('show');
+    });
+  }
+});
+
+// Sample data for autocomplete suggestions
+const suggestions = [
+  "Property Management", "Pricing", "Guarantees", 
+  "Rent Vs. Sell Calculator", "Service Area", 
+  "Scheduling a Showing", "Request Maintenance", 
+  "Pay Rent", "Tenant Resources", "Pet Policy"
+];
+
+// Function to show suggestions based on user input
+function showSuggestions(value) {
+  const suggestionBox = document.getElementById("suggestions-box");
+  suggestionBox.innerHTML = ""; // Clear previous suggestions
+  if (value.length === 0) {
+    suggestionBox.style.display = "none";
+    return;
+  }
+
+  // Filter suggestions based on input
+  const filteredSuggestions = suggestions.filter(suggestion =>
+    suggestion.toLowerCase().includes(value.toLowerCase())
+  );
+
+  // Show suggestions if any match
+  if (filteredSuggestions.length > 0) {
+    filteredSuggestions.forEach(suggestion => {
+      const div = document.createElement("div");
+      div.textContent = suggestion;
+      div.onclick = () => selectSuggestion(suggestion);
+      suggestionBox.appendChild(div);
+    });
+    suggestionBox.style.display = "block";
+  } else {
+    suggestionBox.style.display = "none";
+  }
+}
+
+// Function to set the clicked suggestion in the input box
+function selectSuggestion(suggestion) {
+  document.getElementById("search-bar").value = suggestion;
+  document.getElementById("suggestions-box").style.display = "none";
+}
